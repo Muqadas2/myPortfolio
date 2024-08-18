@@ -1,0 +1,597 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: myfont;
+    src: url(39a2c7f346d5cfae7045aeb2fb50d9ad.ttf);
+}
+
+body{
+    width: 100%;
+    height:100vh;
+    font-family: myfont;
+    background-color: #01f9c6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.name{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top:30%;
+    padding-left: 50px;
+}
+
+.name p{
+    font-size: 50px;
+     line-height: 80px;
+}
+.navbar{
+    position: absolute;
+    display: flex;
+    color: #000000; 
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    width: 100%;
+    height: 15vh;
+    position:absolute;
+    background-color:transparent;
+    z-index: 2;
+}
+.navbar nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.image {
+    height: 100vh;
+     background-color: transparent;
+    transform: translateX(360px);
+}
+.image img {
+    width: 650px;
+    height: 100vh;
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.navbar nav a{
+    display: flex;
+    justify-content: center;
+    padding: 10px ;
+    width: 130px;
+    height:4vh;
+    text-align: center;
+    /* border: 2px solid;
+    border-radius: 23px; */
+    /* outline: black; */
+    gap: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+/* about  */
+.back{
+    width: 100%;
+    height: 13vh;
+    background-color: transparent;
+}
+.back object{
+      width: 50px;
+      height: 50px;
+      left: 40%;
+      color: black;
+      padding:20px;
+      margin:20px 0px 50px 20px;
+      border-radius: 3px;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display:flex;
+    top: 35%;
+    color: #ffffff;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+p{
+    font-size:22px;
+    text-align: center;
+    color: #000;
+}
+.btn {
+  margin: 40px;
+  padding: 15px 40px;
+  border: none;
+ outline: none;
+ color: #FFFfff;
+ background-color: #000;
+cursor: pointer;
+position: relative;
+z-index: 0;
+
+font-size: 22px;
+
+}
+.btn:hover{
+background-color: #0b977b;
+}  
+h1{
+    font-family: "myfont";
+    gap:50px;
+    color: #000;
+}
+/* techstack */
+.skill-page {
+
+    font-family: myfont;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list .content {
+    display: flex;
+    overflow: hidden;
+    width: 500px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.content .skill {
+
+    width: 500px;
+    height: 400px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-width: 4px;
+    border-radius: 18px;
+    color: black;
+    font-size: 18px;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.skill span {
+    transform: translateY(0px);
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+    font-family: myfont;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    margin-bottom: 10px;
+
+}
+
+.content .skill p {
+    font-size: 18px;
+    font-weight: none;
+    text-align: justify;
+}
+
+.arrow {
+    cursor: pointer;
+    padding: 20px;
+    font-size: 120px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow img {
+    size: 200px;
+
+}
+
+.skill.active {
+    display: flex;
+}
+/* projects */
+.back{
+    width: 100%;
+    height: 13vh;
+    background-color: transparent;
+}
+.back object{
+      width: 50px;
+      height: 50px;
+      left: 40%;
+      color: black;
+      padding:20px;
+      margin:20px 0px 50px 20px;
+      border-radius: 3px;
+}
+.head {
+width: 100%;
+height: 20vh;
+position: relative;
+margin: 0;
+padding: 0;
+display: flex;
+top: 1.5%;
+justify-content: center;
+align-items: center;
+background-color: transparent;
+}
+.head h1 {
+font-size: 60px;
+text-transform: capitalize;
+letter-spacing: 5px;
+border: 10px solid;
+margin: 20px 40px;
+padding: 40px 300px;
+border-color: black;
+border-style: solid;
+}
+.project{
+    width: 100%;
+    display: flex;
+    margin-top: 0;
+    border: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: transparent;
+}
+.project p{
+    text-align: justify;
+    width: 70%;
+    font-size: 20px;
+}
+.project p span{
+    font-weight: bold;
+    font-size: 23px;
+    text-align: justify;
+}
+.project h1{
+    font-family: myfont;
+    margin-top: 70px;
+    word-spacing: 3.5px;
+    text-transform: capitalize;
+}
+.project button{
+    width: 170px;
+    height: 55px;
+     background-color: #000000;
+     font-size: 22px;
+     color: #ffffff;
+}
+/* resume */
+h1 {
+    letter-spacing: 4px;
+  }
+  .back {
+    width: 100%;
+    height: 13vh;
+    background-color: transparent;
+  }
+  .back object {
+    width: 50px;
+    height: 50px;
+    left: 40%;
+    color: black;
+    padding: 20px;
+    margin: 20px 0px 50px 20px;
+    border-radius: 3px;
+  }
+  .resume_ {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    top: 1.5%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  .resume_ h1 {
+    font-size: 60px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    border: 10px solid;
+    margin: 20px 40px;
+    padding: 40px 300px;
+    border-color: black;
+    border-style: solid;
+  }
+  .character {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 100px;
+    background-color: transparent;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  .character h1 {
+    font-size: 30px;
+  }
+  .character .title {
+    font-size: 18px;
+  }
+  hr {
+    width: 70%;
+    height: 3px;
+    background-color: #000000;
+    border: none;
+    margin: 40px 0;
+  }
+  .character .para {
+    text-align: center;
+    width: 60%;
+    font-size: 20px;
+  }
+  .education {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: transparent;
+  }
+  .education p {
+    text-align: justify;
+    width: 60%;
+    font-size: 20px;
+  }
+  .education p span {
+    font-weight: bold;
+    font-size: 23px;
+    text-align: justify;
+  }
+  .exper {
+    width: 100%;
+    display: flex;
+    margin-top: 0;
+    border: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: transparent;
+  }
+  .exper p {
+    text-align: justify;
+    width: 70%;
+    font-size: 20px;
+  }
+  .exper p span {
+    font-weight: bold;
+    font-size: 23px;
+    text-align: justify;
+  }
+  .exper h1 {
+    margin-top: 70px;
+  }
+  .skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    gap: 25px;
+    background-color: transparent;
+  }
+  .skills h1 {
+    margin-top: 70px;
+  }
+  .skills ul {
+    width: 60%;
+    text-align: center;
+  }
+  .skills ul li {
+    list-style: square;
+    text-align: justify;
+    transform: translateX(100px);
+  }
+  .project {
+    width: 100%;
+    display: flex;
+    margin-top: 0;
+    border: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: transparent;
+  }
+  .project p {
+    text-align: justify;
+    width: 70%;
+    font-size: 20px;
+  }
+  .project p span {
+    font-weight: bold;
+    font-size: 23px;
+    text-align: justify;
+  }
+  .project h1 {
+    margin-top: 70px;
+  }
+  .project button {
+    width: 170px;
+    height: 55px;
+    background-color: #000000;
+    font-size: 22px;
+    color: #ffffff;
+  }
+  button:hover {
+    background-color: #0fb997;
+  }
+  .end {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  .end_ {
+    width: 200px;
+    height: 55px;
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  /* contact me  */
+  .back {
+    width: 100%;
+    background-color: transparent;
+    /* display: flex;
+    justify-content: flex-start;
+    padding: 20px; */
+}
+
+.back svg {
+    /* margin-top: 20%;
+    margin-left: 25%;
+    width: 50px;
+    height: 50px;
+    color: black; */
+
+    width: 50px;
+    height: 50px;
+    left: 30%;
+    color: black;
+    padding: 20px;
+    margin: 20px 0px 50px 20px;
+    border-radius: 3px;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.contact h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    border: 6px solid;
+    padding: 30px 180px;
+    border-color: black;
+    border-style: solid;
+}
+
+.msg_ {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.msg_ div {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 20px);
+    /* Adjusted to keep elements aligned */
+    margin-bottom: 10px;
+    /* Added space between blocks */
+}
+
+.msg_ label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.msg_ input,
+.msg_ textarea {
+    padding: 10px;
+    font-size: 19px;
+    width: 75%;
+    /* Ensures consistent width */
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+.msg_ textarea {
+    width: 85%;
+    height: 200px;
+    resize: none;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: transparent;
+}
+
+.icons a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.end_ {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+
+.end {
+    width: 190px;
+    height: 50px;
+    background-color: #000000;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.end:hover {
+    background-color: aquamarine;
+}

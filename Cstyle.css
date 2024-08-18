@@ -1,0 +1,290 @@
+@font-face {
+    font-family:myfont ;
+    src: url(adelia.otf);
+}
+@font-face {
+    font-family:font ;
+    src: url(39a2c7f346d5cfae7045aeb2fb50d9ad.ttf);
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+#foot{
+    height: 23vh;
+}
+#home {
+    height: 60vh;
+  }
+  
+  #about-me {
+    height: 80vh;
+  }
+  
+  #projects {
+    height: 80vh;
+  }
+  
+  #resume {
+    height: 50vh;
+  }
+  
+  #tech-stack {
+    height: 60vh;
+  }
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav span {
+    font-size: 19.5px;
+    font-weight: bold;
+    margin-right: 20px;
+    font-family:myfont;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap:25px;
+}
+
+nav li {
+    margin-right: 20px;
+}
+nav h2{
+    font-family: myfont ;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+nav a:hover{
+    opacity: 1;
+    text-decoration: underline #00CCFE;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+section hr{
+    display: block;
+    width: 70%;
+    background-color: #ffffff;
+    height: 3px;
+    margin: 0 auto;
+    border: #ffffff;
+    
+}
+#home {
+    
+    margin: 0; /* Remove any margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    background-color: #000; /* Background color for the home section */
+    color: #ffffff; /* Text color for better contrast */
+}
+#home span, nav span{
+    color: #02CCFE;
+}
+#home p span{
+    color: #02CCFE;
+    font-family: myfont;
+    word-spacing: 4px;
+}
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    border: 3px solid #ffffff; 
+    padding: 10px 5px 10px 5px; 
+    display: block;
+    margin: 0 auto; 
+    width: 50%; 
+    gap:30px;
+}
+
+#about-me p{
+    text-align: center;
+    justify-content: center;
+    gap: 80px;
+}
+#about-me a{
+    color: blue;
+    text-decoration: none;
+}
+#about-me a:hover{
+    color: blue;
+    text-decoration: underline;
+    text-overflow: clip;
+}
+#projects span {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  #projects span:hover {
+    text-decoration: underline;
+  }
+  #project p{
+    justify-content: center;
+  } 
+#resume{
+    width: 100%;
+  
+
+}
+
+h1, h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: font ;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+#tech-stack {
+    
+    text-align: center;
+  }
+  
+  #tech-stack h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  #tech-stack ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #tech-stack li {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-basis: calc(33.33% - 40px);
+  }
+  
+  #tech-stack li:hover {
+    transform: scale(1.05); 
+  }
+  #tech-stack i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+.icons{
+    text-align:center;
+    display:flex; 
+    gap: 20px;
+    color: #00CCFE;
+}
+
+.msg_ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    gap:35px;
+}
+.msg_ div {
+    display: flex;
+    flex-direction: column;
+    width: calc(40% - 30px);
+    margin-bottom: 10px;
+    
+}
+.msg_ label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    
+}
+.msg_ label .cc{
+    display: block;
+    margin-left: 300px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+.msg_ input
+ {
+    padding: 10px;
+    font-size: 19px;
+    margin-right: 20px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+}
+.msg_ textarea {
+    padding: 10px;
+    font-size: 19px;
+    width: 500px;
+    height: 200px;
+    resize: none;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    margin: 0 auto; 
+}
+button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 190px;
+    height: 50px;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+.share-button {
+    position: relative; 
+    top: 0; 
+    z-index: 1;
+  }
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+    background-color: #333;
+    color: #00CCFE;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
+
